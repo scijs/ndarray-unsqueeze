@@ -3,7 +3,7 @@
 
 var ndarray = require('ndarray')
 var assert = require('chai').assert
-var unsqueeze = require('../unsqueeze')
+var unsqueeze = require('../')
 var ndt = require('ndarray-tests')
 
 describe('ndarray-unsqueeze', function () {
