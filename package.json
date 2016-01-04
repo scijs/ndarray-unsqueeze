@@ -1,6 +1,6 @@
 {
   "name": "ndarray-unsqueeze",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add singleton dimensions to an ndarray",
   "main": "index.js",
   "scripts": {
