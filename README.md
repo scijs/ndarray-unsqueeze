@@ -10,13 +10,31 @@ This module takes an input ndarray and either appends a singleton dimension of l
 
 ```javascript
 var ndarray = require('ndarray')
+var unsqueeze = require('ndarray-unsqueeze')
 
 unsqueeze(ndarray([1, 2, 3, 4], [2, 2]))
 // => ndarray([1, 2, 3, 4], [2, 2, 1])
 
 unsqueeze(ndarray([1, 2, 3, 4], [2, 2]), 0)
 // => ndarray([1, 2, 3, 4], [1, 2, 2])
-``
+```
+
+Note that ndarrays have no concept of row or column vectors. If you need a matrix explicitly representing a row or column vector, you can use unsqueeze:
+
+```javascript
+var show = require('ndarray-show')
+
+// Create a 3 x 1 matrix by appending a singleton dimension:
+show(unsqueeze(ndarray([1,2,3])))
+// => 1.000
+//    2.000
+//    3.000
+
+// Create a 1 x 3 matrix by prepending a singleton dimension:
+show(unsqueeze(ndarray([1,2,3]), 0))
+// => 1.000  2.000  3.000
+
+```
 
 ## Installation
 
