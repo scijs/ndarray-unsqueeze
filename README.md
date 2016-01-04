@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This module takes an input ndarray and either appends a singleton dimension of length one or inserts it before a specific dimension.
+This module takes an input ndarray and either appends a singleton dimension (a dimension of length one) or inserts it before a specific dimension.
 
 ## Examples
 
